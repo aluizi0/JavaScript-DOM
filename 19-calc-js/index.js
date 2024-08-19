@@ -25,6 +25,13 @@ input.addEventListener('keydown', (ev) => {
     if (ev.key === 'Backspace'){
         input.value = input.value.slice(0, -1);
     }
+    if (ev.key === 'Enter'){
+        calculate();
+    }
 });
+
+function calculate(){
+    console.log('calculate');
+}
 
 
