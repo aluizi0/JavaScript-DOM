@@ -7,6 +7,14 @@ const resultInput = document.getElementById('result');
 
 const allowedKeys = ['0','1','2','3','4','5','6','7','8','9','+','-','*','/','(',')','.'];
 
+document.querySelectorAll('.charKey').forEach( function (charKeyBtn) {
+    charKeyBtn.addEventListener('click', function(){
+        const value = charKeyBtn.dataset.value;
+        input.value += value;
+    });
+});
+
+
 /**
  * Event listener for the input element to prevent the user from typing letters.
  * 
