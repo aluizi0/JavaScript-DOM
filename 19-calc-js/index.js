@@ -14,15 +14,10 @@ document.querySelectorAll('.charKey').forEach( function (charKeyBtn) {
     });
 });
 
-
-/**
- * Event listener for the input element to prevent the user from typing letters.
- * 
- * Ouvinte de evento para o elemento input para evitar que o usuário digite letras.
- * 
- * @param {Event} ev - O objeto de evento keydown.
- * @returns {void}
- */
+document.getElementById('clear').addEventListener('click', function(){
+    input.value = '';
+    input.focus();
+});
 
 input.addEventListener('keydown', (ev) => {
     ev.preventDefault();
