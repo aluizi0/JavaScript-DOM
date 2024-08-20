@@ -33,8 +33,11 @@ input.addEventListener('keydown', (ev) => {
     }
 });
 
+document.getElementById('equal').addEventListener('click', calculate);
+
 function calculate(){
-    console.log('calculate');
+    const result = eval(input.value);
+    resultInput.value = result;
 }
 
 
